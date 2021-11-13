@@ -1,0 +1,113 @@
+body {
+  font-family: Roboto
+}
+
+.card {
+  cursor: pointer;
+  font-size: 20px
+}
+
+.card:hover {
+  transform: scale(1.05, 1.05);
+
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out
+}
+
+.card > img:hover{
+  opacity: 0.7;
+
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out
+}
+
+.card:not(:hover) {
+  transform: scale(1, 1);
+
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out
+}
+
+.card > img:not(:hover){
+  opacity: 1;
+
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out
+}
+
+#username {
+  font-size: 100%;
+  white-space: nowrap
+}
+
+li {
+  list-style: none
+}
+
+.modal-content > em {
+  color: #aaa;
+  text-align: center;
+  padding: 10px;
+}
+
+#modal-image-container {
+  text-align: center;
+}
+
+.fa-heart {
+  color: rgb(241, 38, 23)
+}
+
+.navbar {
+  z-index: 5;
+}
+
+#loader-wrapper {
+  position: absolute;
+  z-index: 10;
+  
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  opacity: 95%;
+}
+
+#top-button {
+  right: 3%; 
+  bottom: 20px; 
+  z-index: 20;
+
+  background-color: #ffffff;
+  border-radius: 64px;
+  opacity: 30%
+}
+
+#top-button:active {
+  transform: scale(1.1, 1.1);
+  opacity: 90%
+}
+
+#top-button a{
+  color: #000000;
+}
+
+
+@media screen and (min-width: 768px) {
+  #modal-image-container {
+    transform: scale(1.25,1.25) translate(20px,20px)
+  }
+
+  #top-button:hover{
+    transform: scale(1.1, 1.1);
+    opacity: 90%
+  }
+
+  .card{
+    font-size: 14px
+  }
+}
